@@ -1,0 +1,24 @@
+<h4>Public Chat</h4>
+<div class="st-col col-12 col-sm st-module">
+    <q-input id="iya8" v-model="username" :dense="true" label="Username"></q-input>
+    <q-input id="i6fj" v-model="password" :dense="true" label="Password" type="Password"></q-input>
+    <div class="row">
+        <div class="st-col col-12 col-sm st-module">
+            <q-btn id="i8z9" color="primary" icon="account_box" label="Login" v-on:click="readyButton = true"></q-btn>
+            <q-input id="ij91n" v-model="LoginStatus" :dense="true" label="Login status:" :readonly="true" :borderless="true"></q-input>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="st-col col-12 col-sm st-module">
+        <div class="row">
+            <div id="chatiddiv" class="st-col col-12 col-sm st-module">
+                <q-input id="chatidtext" v-model="chatText" :dense="true" label="Chat" :clearable="false" :readonly="true" type="textarea" v-if="ready"></q-input>
+            </div>
+        </div>
+        <q-input id="iuvn3" v-model="userText" :dense="true" label="Message" type="textarea" v-if="ready"></q-input>
+    </div>
+    <q-input id="iiopp" v-model="userList" :dense="true" label="Active users" :readonly="true" type="textarea"></q-input>
+    <div class="row"></div>
+</div>
+<header></header>
